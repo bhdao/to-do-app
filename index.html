@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400;1,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="todo_container">
+      <h1>My To-Do List</h1>
+      <h2 id="congrats">🎊 Congrats!<br>You've completed your To-Do list!</h2>
+      <ul id="todo_body">
+        <li data-key="">Check the form below!</li>
+      </ul>
+      <button class="yeet" title="Yeet [verb]: to throw something, often with excitment, or surprise">Yeet Completed Items</button>
+      <div>
+      </div>
+    </div>
+    <br />
+    <div id="form_container">
+      <form id="form_body">
+        <label for="">
+          <p>Please write your next to-do item here</p>
+          <input
+            name="todoItem"
+            type="text"
+            placeholder="What's next on your agenda?"
+          />
+        </label>
+        <p>Please specify your to-do priority level</p>
+        <input
+          type="radio"
+          id="def"
+          name="todoLevel"
+          value="default"
+          checked="checked"
+        />
+        <label for="default">Default</label>
+        <input type="radio" id="med" name="todoLevel" value="italic" />
+        <label for="medium"
+          ><span style="font-style: italic">Medium</span></label
+        >
+        <input type="radio" id="hi" name="todoLevel" value="bold" />
+        <label for="high"><span style="font-weight: bold; text-decoration: underline;">High</span></label
+        ><br />
+        <input type="Submit" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

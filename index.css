@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Andada Pro", serif;
+  flex-direction: column;
+}
+
+h2 {
+  display: none;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  font-size: 24px;
+}
+
+#todo_body {
+  display: flex;
+  flex-direction: column;
+}
+
+#form_body {
+  min-width: 500px;
+  max-width: 700px;
+}
+
+#todo_container {
+  padding: 10px;
+  border-radius: 7px;
+  min-width: 500px;
+  max-width: 700px;
+  background-color: rgb(173, 173, 255);
+  color: white;
+}
+
+input {
+  margin-bottom: 1.5rem;
+}
+
+input[name="todoItem"] {
+  width: 100%;
+  max-width: 700px;
+  height: 2em;
+}
+
+input[type="Submit"] {
+  width: 100px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.yeet {
+  justify-content: right;
+  margin-top: 10px;
+  align-self: flex-end;
+  display: flex;
+}
+
+.show {
+  display: block;
+  text-align: center;
+  line-height: 1.5em;
+}
