@@ -12,9 +12,16 @@ let todoContainer = document.querySelector("#todo_container");
 let congrats = document.querySelector("#congrats");
 
 let listData = [];
-if (JSON.parse(localStorage.listData).length > 0) {
-  todoList.innerHTML = "";
-  listData = [...JSON.parse(localStorage.listData)];
+
+let checkInit = () => {
+  if (JSON.parse(localStorage.listData).length > 0) {
+    todoList.innerHTML = "";
+    listData = [...JSON.parse(localStorage.listData)];
+  }
+};
+
+if (localStorage.length) {
+  checkInit();  
 }
 
 for (const item of listData) {
@@ -32,8 +39,8 @@ let checkList = () => {
   }
   listData = newList;
   localStorage.setItem("listData", JSON.stringify(listData))
-  if (refreshedList.length < 1 && !congrats.classList.value){document.getElementById("congrats").classList.add("show")}
-  else {congrats.classList.remove("show")};
+  if (refreshedList.length < 1 && !congrats.classList.value) { document.getElementById("congrats").classList.add("show") }
+  else { congrats.classList.remove("show") };
 };
 
 let crossItem = (e) => {
